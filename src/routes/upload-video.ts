@@ -1,11 +1,11 @@
-import { FastifyInstance } from "fastify"
-import { fastifyMultipart } from "@fastify/multipart"
+import { FastifyInstance } from 'fastify'
+import { fastifyMultipart } from '@fastify/multipart'
 import path from 'node:path'
-import { randomUUID } from "node:crypto"
-import fs from "node:fs"
+import { randomUUID } from 'node:crypto'
+import fs from 'node:fs'
 import { pipeline } from 'node:stream'
-import { promisify } from "node:util"
-import { prisma } from "../lib/prisma"
+import { promisify } from 'node:util'
+import { prisma } from '../lib/prisma'
 
 const pump = promisify(pipeline)
 
